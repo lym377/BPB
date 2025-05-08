@@ -122,13 +122,17 @@ BPB面板设置
 ##### 常用IP获取方式cleanIP/优选IP：
 
 地址1：https://www.wetest.vip/page/cloudflare/address_v4.html
+
 地址2：https://ipdb.030101.xyz/
+
 地址3：https://stock.hostmonit.com/CloudFlareYes
+
 地址4：https://stock.hostmonit.com/CloudFlareYes
 
 ##### PROXYIP：
 
 点击进入1：https://ipdb.030101.xyz/bestproxy/
+
 点击进入2：https://www.nslookup.io/domains/bpb.yousef.isegaro.com/dns-records/
 
 节点测试
