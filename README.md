@@ -1,7 +1,5 @@
 ### BPB Panel在Cloudflare page上部署并实时更新
 
-### BPB-Worke-Panel最新版更新工作流
-
 新文件目录进行大的更改！现重新做了githhub action.（工作流来自互联网）
 
 ### 准备工作
@@ -101,4 +99,39 @@ jobs:
           commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
 ```
 
+(Gihub Action来源：Hans汉斯)
+#### Cloudflare 部署
+
+•创建pages：点击workers和pages，选择pages部署。连接github仓库，选择新建的项目仓库，然后点击部署。
+
+•绑定自定义域名：以防止page分配的域名被屏蔽。
+
+•设置变量：UUID，PROXY_IP, TR_PASS
+
+•绑定KV命名空间：名称随便但不能含有bpb等敏感词
+
+#### 重试部署pages
+BPB面板设置
+
+•部署成功后，打开浏览器输入:https://[自定义域名]或者你的项目地址,后面加上/panel检查是否能正常访问BPB面板.
+
+•修改BPB面板密码
+
+•配置BPB面板参数
+
+##### 常用IP获取方式cleanIP/优选IP：
+
+地址1：https://www.wetest.vip/page/cloudflare/address_v4.html
+地址2：https://ipdb.030101.xyz/
+地址3：https://stock.hostmonit.com/CloudFlareYes
+地址4：https://stock.hostmonit.com/CloudFlareYes
+
+##### PROXYIP：
+
+点击进入1：https://ipdb.030101.xyz/bestproxy/
+点击进入2：https://www.nslookup.io/domains/bpb.yousef.isegaro.com/dns-records/
+
+节点测试
+
+(Gihub Action来源：Hans汉斯)
 
